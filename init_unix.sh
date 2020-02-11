@@ -13,3 +13,4 @@ perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/windo
 perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/windows/package.sh
 
 perl -pi -e x,appname,$APPNAME,g $SCRIPT_DIR/utils/darwin/package/Info.plist
+cd $SCRIPT_DIR/utils/darwin/package && tar -zxf sciter-osx-64.tar.gz && rm sciter-osx-64.tar.gz
