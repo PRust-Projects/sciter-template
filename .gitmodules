@@ -1,0 +1,3 @@
+[submodule "utils/darwin-cross/build/osxcross"]
+	path = utils/darwin-cross/build/osxcross
+	url = https://github.com/tpoechtrager/osxcross
