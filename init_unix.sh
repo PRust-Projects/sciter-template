@@ -5,6 +5,8 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/darwin/build.sh
 perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/darwin/package.sh
+perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/darwin-cross/build.sh
+perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/darwin-cross/package.sh
 perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/linux/build.sh
 perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/linux/package.sh
 perl -pi -e s,APPNAME=\"appname\",APPNAME=\"$APPNAME\",g $SCRIPT_DIR/utils/linux/package/install.sh
